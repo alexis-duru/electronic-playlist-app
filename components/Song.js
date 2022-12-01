@@ -5,22 +5,17 @@ const Song = ({ id, name, artist, albumCoverUrl }) => {
 
     return (
         <>
-            <Image
-         src={albumCoverUrl} alt={name} width={100} height={100} 
-         />
-    <NextLink href={`/songs/[id]`} as={`/songs/${id}`} passHref>
-      <div as='a'>
-       <div>
-        {name}
-       </div>
-          <p color='gray.700'>{artist}</p>
-
-      </div>
-    </NextLink>
+            <article>
+                <Image src={albumCoverUrl} alt={name} width={100} height={100} />
+                <NextLink href={`/songs/[id]`} as={`/songs/${id}`} passHref>
+                    <div as='a'>
+                        <h2>{name}</h2>
+                        <h3 color='gray.700'>{artist}</h3>
+                    </div>
+                </NextLink>
+            </article>
         </>
     );
-
-}
- ;
+};
 
 export default Song;

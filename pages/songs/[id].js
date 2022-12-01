@@ -20,10 +20,8 @@ export const getStaticPaths = async () => {
 
 export default ({ song }) => (
   <>
-    <header>{song.name}</header>
-    <p>
-      {song.artist}
-    </p>
+    <p>{song.name}</p>
+    <p>{song.artist}</p>
     <iframe
       width='100%'
       height='315'
@@ -32,9 +30,7 @@ export default ({ song }) => (
       allowFullScreen
     />
     <Link href='/' passHref>
-      <button as='a'>
-        Back
-      </button>
+      <button as='a'>Back</button>
     </Link>
   </>
 );
