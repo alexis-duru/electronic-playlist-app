@@ -25,6 +25,16 @@ section {
     min-width: 300px;
 }
 
+.container__id {
+    h1, h2, h3, button {
+        margin: 1.5rem 0px;
+    }
+}
+
+iframe {
+    border: 0px;
+}
+
 .hidden {
     opacity: 0;
 }
