@@ -22,7 +22,9 @@ section {
     width: 50%;
     margin: auto;
     max-width: 750px;
-    min-width: 300px;
+    @media screen and (max-width: 425px) {
+        width: 90%;        
+    }
 }
 
 .container__id {
@@ -33,6 +35,12 @@ section {
 
 iframe {
     border: 0px;
+   height: 400px;
+   width: 100%;
+    @media screen and (max-width: 425px) {
+        height: 200px;
+        width: 100%;
+    }
 }
 
 .hidden {
