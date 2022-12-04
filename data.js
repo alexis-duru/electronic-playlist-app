@@ -20,7 +20,7 @@ export const playlist = [
     name: 'Two Moons Under',
     artist: 'George Fitzgerald',
     genre: 'Electronic',
-    albumCoverUrl: '/assets/img/gfitzgerald.jpg',
+    albumCoverUrl: '/assets/img/gfitzgerald.jpeg',
     youtubeID: 'g9C4-EHIlog',
   },
   {
