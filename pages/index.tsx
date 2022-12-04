@@ -13,7 +13,7 @@ export const getStaticProps = async () => {
 export default ({ playlistLists }) => (
   <>
     <section>
-      <div class="container">
+      <div className="container">
         <h1>ELECTRONIC MUSIC PLAYLIST</h1>
           {playlistLists.map((playlistList) => (
             <Song key={playlistList.id} {...playlistList} />

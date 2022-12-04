@@ -34,7 +34,7 @@ export default ({ song }) => (
         allowFullScreen
       />
       <Link href='/' passHref>
-        <button as='a'><span><Image src={arrow} height={200} width={200}></Image></span>Back</button>
+        <button><span><Image alt='image pour le bouton de retour' src={arrow} height={200} width={200}></Image></span>Back</button>
       </Link>
     </div>
   </section>
